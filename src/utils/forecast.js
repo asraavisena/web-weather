@@ -10,7 +10,8 @@ const forecast = (lat,long, callback) => {
             callback('Can not find location. TRY AGAIN!!!!!', undefined)
         }else{
             callback(undefined,body.daily.data[0].summary+' Its currently ' + body.currently.temperature 
-            + ' degrees out. There is a ' +  body.currently.precipProbability + '% chance of rain'
+            + ' degrees out. There is a ' +  body.currently.precipProbability + '% chance of rain' 
+            + '. The humid is ' + body.currently.humidity
             // {
             //     temperature: response.body.currently.temperature,
             //     chanceOfRain: response.body.currently.precipProbability                
