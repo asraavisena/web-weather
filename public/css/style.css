@@ -1,0 +1,61 @@
+body{
+    color: #444444;
+    font-family: tahoma;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display:flex;
+    flex-direction: column;
+    /* vh view height, 100vh means 100% viewport height */
+    min-height: 100vh; 
+}
+
+.main-content{
+    /* given element 1 which mean tells flex box that in main-content should take up all leftover space*/
+    flex-grow: 1;
+}
+
+header{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+footer{
+    color: #0080FF;
+    border-top: 1px solid #eeeeee;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+header > a{
+    margin-right: 15px;
+    color: #6C6C00;
+    text-decoration: none;
+}
+
+header > a:hover{
+    color: #ffffff;
+    background-color: #006B6B;
+}
+
+.azai{
+    width: 250px;
+}
+
+input{
+    border: 3px solid #999999;
+    padding: 6px;
+}
+
+button{
+    cursor: pointer;
+    border: 3px solid #cccccc;
+    padding: 6px;
+    background: #6C6C00;
+    color: #ffffff;
+}
