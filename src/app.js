@@ -23,7 +23,7 @@ app.use(express.static(publicDirPath))
 
 app.get('', (req,res)=>{
     res.render('index',{
-        title:'Trying dynamic page with hbs',
+        title:'My Weather App',
         name: 'Asra Avisena'
     })
 })
