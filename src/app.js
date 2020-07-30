@@ -30,14 +30,14 @@ app.get('', (req,res)=>{
 
 app.get('/help', (req,res)=>{
     res.render('help',{
-        title: 'Help Me',
+        title: 'Help',
         name: 'Asra'
     })
 })
 
 app.get('/about', (req,res)=>{
     res.render('about', {
-        title:'About My Self',
+        title:'About this Page',
         name: 'Asra A'
     })
 })
